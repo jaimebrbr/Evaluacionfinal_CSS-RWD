@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fuentes/DancingScript-Regular.otf");
+  }
+*{margin: 0;}
+body{
+    background-color: #02010a;
+    font-family: Dancing Script;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*----------------------------------------------------------------------*/
+/*Encabezado de la pagina*/
+.titulo{
+    font-size: 2.5rem;
+    line-height: 1.3em;
+}
+
+.header{
+    background: #5b7989;
+    border-radius: 10px 10px 0 0;
+    padding-left: 20px;
+    padding: 2rem;
+}
+
+.header a{
+    color: white;
+}
+
+#link_inicio{
+    text-decoration: none;
+}
+
+.logo{
+    text-decoration: none;
+}
+.logo-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #81a4b8;
+}
+
+/*---------------------------------------------------------------*/
+/*Cuerpo de la pagina*/
+.portada{
+    background: #82c3a6;
+    padding: 2rem 2rem;
+}
+
+.portada img{
+    width: 750px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    box-shadow: 2px 2px #02010a;
+
+}
+
+.imagen-s{
+    background: #d5c75f;
+    padding-top: 2rem;
+}
+
+.paisajes{
+    float: left;
+}
+
+.paisajes img{
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    box-shadow: 2px 2px #02010a;
+
+}
+
+.paisajes img:hover{
+    transform: rotate(10deg);
+    border: 0;
+    box-shadow: 2px 2px #82c3a6;
+
+}
+
+.retrato{
+    float: right;
+}
+
+.retrato img{
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    box-shadow: 2px 2px #02010a;
+}
+
+.retrato img:hover{
+    transform: translate(5px, -20px);
+    border: 0;
+    box-shadow: 2px 2px #82c3a6;
+}
+
+.paisajes, .retrato{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#s2 p{
+    text-align: center;
+    color: #02010a;
+    text-decoration: none;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.dos-img{
+    border: 1px solid black;
+}
+
+/*---------------------------------------------------------------*/
+/*Pie de pagina*/
+#footer{
+    font-size: 0.7em;
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    margin-top: 1rem;
+    padding: 2em 2em;
+    color: #02010a;
+
+}
+
+.pie{
+    margin-top: 10px;
+}
+.contacto, .terminos,.redes, .derechos{
+    width: 24%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 auto;
+    flex-wrap: wrap;
+    display: inline-block;
+    border: 1px solid black;
+
+}
+
+
+/*----------------------------------------*/
+/*Tamaño para movil*/
+@media only screen and (max-width: 732px){
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .navigation ul li{
+        display: inline-block;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover{
+        background: #81a4b8;
+    }
+
+    .portada img{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .paisajes, .retrato{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .retrato img, .paisajes img{
+        width: 420px;
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .contacto, .terminos, .redes, .derechos{
+        /*display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;*/
+    }
+}
